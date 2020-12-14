@@ -29,6 +29,12 @@ export const RepositoryInfo = styled.section`
     display:flex;
     align-items:center;
 
+    img{
+      width:120px;
+      height:120px;
+      border-radius:50%
+    }
+
     div{
       margin-left:24px;
     
