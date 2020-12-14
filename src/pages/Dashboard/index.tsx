@@ -30,7 +30,7 @@ const Dashboard: React.FC = () => {
 
   useEffect(() => {
     localStorage.setItem('@GithubExplorer:repositories', JSON.stringify(repositories))
-  }, [])
+  }, [repositories])
 
   async function handleAddRepository(event: FormEvent<HTMLFormElement>): Promise<void> {
     event.preventDefault()
@@ -77,7 +77,6 @@ const Dashboard: React.FC = () => {
             <FiChevronRight size={20} />
           </Link>
         ))}
-
       </Repositories>
     </>
   )
